@@ -27,6 +27,7 @@ class TestLogin(unittest.TestCase):
         if cd == '10000':
             api.BASE_headers['Authorization']='Bearer '+rp.json().get('data')
             print('登录成功后请求头',api.BASE_headers)
+            print('登录成功后请求头',api.BASE_headers)
             # logging.debug('登录成功后请求头',api.BASE_headers)
 
         # print(type(str(rp.json().get('code'))))
